@@ -11,6 +11,11 @@ services:
       - html:/usr/share/nginx/html
       - dhparam:/etc/nginx/dhparam
       - /var/run/docker.sock:/tmp/docker.sock:ro
+  volumes:
+  vhost:
+  html:
+  certs:
+  dhparam:
 networks:
   default:
     external:
